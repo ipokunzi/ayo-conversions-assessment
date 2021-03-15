@@ -1,7 +1,7 @@
 com\conversions\service\MassService.class
-com\conversions\ConversionsApplication.class
 com\conversions\service\VolumeService.class
 com\conversions\service\TemperatureService.class
-com\conversions\service\AreaService.class
 com\conversions\service\LengthService.class
 com\conversions\controller\ConversionsController.class
+com\conversions\ConversionsApplication.class
+com\conversions\service\AreaService.class
