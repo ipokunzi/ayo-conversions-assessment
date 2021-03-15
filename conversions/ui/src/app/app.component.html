@@ -306,7 +306,7 @@
 <div class="content" role="main">
 
   <h2>Conversions</h2>
-	
+   	
 		<table>
 		  <tr>
 			<td><h3>Area Conversion</h3></td>
@@ -315,10 +315,10 @@
 		  </tr>
 		  <tr>
 			<td>Square Kilometer/s to Square Mile/s:</td>
-			<td><input name = "squarekilometers" type = "text" value="1" ng-model = "squarekilometers" required></td>
+			<td><input name = "squarekilometers_msg" id = "squarekilometers_msg" type = "text" value="1" [(ngModel)] = "squarekilometers_msg" required></td>
 			<td>
-				<button>
-				  Convert
+				<button (click)="clickEventSquareKilometers()">
+					Convert
 				</button>
 				<span>
 				  {{squaremiles}}
@@ -327,9 +327,9 @@
 		  </tr>
 		  <tr>
 			<td>Square Mile/s to Square Kilometer/s:</td>
-			<td><input name = "squaremiles" type = "text" value="1" ng-model = "squaremiles" required></td>
+			<td><input name = "squaremiles_msg" id="squaremiles_msg" type = "text" value="1" [(ngModel)] = "squaremiles_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventSquareMiles()">
 				  Convert
 				</button>
 				<span>
@@ -344,9 +344,9 @@
 		  </tr>
 		  <tr>
 			<td>Kilometer/s to Mile/s:</td>
-			<td><input name = "kilometers" type = "text" value="1" ng-model = "kilometers" required></td>
+			<td><input name = "kilometers_msg" id = "kilometers_msg" type = "text" value="1" [(ngModel)] = "kilometers_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventKilometers()">
 				  Convert
 				</button>
 				<span>
@@ -356,9 +356,9 @@
 		  </tr>
 		  <tr>
 			<td>Mile/s to Kilometer/s:</td>
-			<td><input name = "miles" type = "text" value="1" ng-model = "miles" required></td>
+			<td><input name = "miles_msg" id = "miles_msg" type = "text" value="1" [(ngModel)] = "miles_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventMiles()">
 				  Convert
 				</button>
 				<span>
@@ -373,9 +373,9 @@
 		  </tr>
 		  <tr>
 			<td>Kilgram/s to Pound/s:</td>
-			<td><input name = "kilograms" type = "text" value="1" ng-model = "kilograms" required></td>
+			<td><input name = "kilograms_msg" id = "kilograms_msg" type = "text" value="1" [(ngModel)] = "kilograms_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventKilograms()">
 				  Convert
 				</button>
 				<span>
@@ -385,9 +385,9 @@
 		  </tr>
 		  <tr>
 			<td>Pound/s to Kilgram/s:</td>
-			<td><input name = "pounds" type = "text" value="1" ng-model = "pounds" required></td>
+			<td><input name = "pounds_msg" id = "pounds_msg" type = "text" value="1" [(ngModel)] = "pounds_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventPounds()">
 				  Convert
 				</button>
 				<span>
@@ -402,9 +402,9 @@
 		  </tr>
 		  <tr>
 			<td>Celsius to Kelvin:</td>
-			<td><input name = "celsius" type = "text" value="0" ng-model = "celsius" required></td>
+			<td><input name = "celsius_msg" id = "celsius_msg" type = "text" value="0" [(ngModel)] = "celsius_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventCelsius()">
 				  Convert
 				</button>
 				<span>
@@ -414,9 +414,9 @@
 		  </tr>
 		  <tr>
 			<td>Kelvin to Celsius:</td>
-			<td><input name = "kelvin" type = "text" value="0" ng-model = "kelvin" required></td>
+			<td><input name = "kelvin_msg" id = "kelvin_msg" type = "text" value="0" [(ngModel)] = "kelvin_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventKelvin()">
 				  Convert
 				</button>
 				<span>
@@ -431,9 +431,9 @@
 		  </tr>
 		  <tr>
 			<td>Milliliter/s to Liter/s:</td>
-			<td><input name = "milliliters" type = "text" value="1" ng-model = "milliliters" required></td>
+			<td><input name = "milliliters_msg" id = "milliliters_msg" type = "text" value="1" [(ngModel)] = "milliliters_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventMilliliters()">
 				  Convert
 				</button>
 				<span>
@@ -443,9 +443,9 @@
 		  </tr>
 		  <tr>
 			<td>Liter/s to Milliliter/s:</td>
-			<td><input name = "liters" type = "text" value="1" ng-model = "liters" required></td>
+			<td><input name = "liters_msg" id = "liters_msg" type = "text" value="1" [(ngModel)] = "liters_msg" required></td>
 			<td>
-				<button>
+				<button (click)="clickEventLiters()">
 				  Convert
 				</button>
 				<span>
